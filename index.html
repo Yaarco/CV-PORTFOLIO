@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Marco Romin
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" >
+    <!-- smidiga ikoner från bootstrap -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" >
+    <script defer src="script.js">
+    </script>
+  </head>
+  <body>
+    <header>
+      <section id="profil" class="profil">
+        <div class="profile-card">
+          <h1>
+            Marco Romin
+          </h1>
+          <img src="jag.png" alt="Porträtt av Marco Romin">
+        </div>
+        <address>
+          <a href="https://github.com/">
+            <i class="bi bi-github">
+            </i>
+          </a>
+          <button type="button" id="mail-btn" >
+            <i class="bi bi-envelope-at-fill">
+            </i>
+          </button>
+          <a href="mailto:marco.romin@gmail.com" id="mail" class="contact-link" >
+            marco.romin@gmail.com
+          </a >
+          <button type="button" id="phone-btn" >
+            <i class="bi bi-telephone-fill">
+            </i>
+          </button>
+          <a href="tel:+46704240498" id="phone" class="contact-link">
+            0704240498
+          </a>
+        </address>
+      </section>
+    </header>
+    <main>
+      <section class="om-mig">
+        <h2>
+          Om mig
+        </h2>
+        <p>
+          Jag är 20 år gammal, bor i Skillingaryd och har haft intresse för programmering och webbdesign sedan 13-årsåldern. I ett tag frilansade jag på fiverr.com genom att skapa chattbottar åt olika kunder, vilket lärde mig mycket om att programmera åt andra och samarbete med kunder.
+        </p>
+      </section>
+      <section class="kompetenser">
+        <h2>
+          Kompetenser
+        </h2>
+        <ul>
+          <li>
+            Flytande tal och skrift i Engelska, Svenska
+          </li>
+          <li>
+            Erfaren i Javascript, CSS, HTML
+          </li>
+          <li>
+            Erfarenhet i Adobe: Photoshop, Premiere Pro, Illustrator
+          </li>
+        </ul>
+      </section>
+      <section class="erfarenhet">
+        <h2>
+          Erfarenhet
+        </h2>
+        <ul>
+          <li>
+            <h3>
+              Terminalarbetare
+            </h3>
+            <p class="duration">
+              <time datetime="2026">
+                Sommaren 2026
+              </time>
+            </p>
+            <p class="employer">
+              UPS Torsvik
+            </p>
+            <p>
+              Sorterade och lastade paket
+            </p>
+          </li>
+          <li>
+            <h3>
+              Lagermedarbetare
+            </h3>
+            <p class="duration">
+              <time datetime="2025">
+                Sommaren 2025
+              </time>
+            </p>
+            <p class="employer">
+              Power Skillingaryd
+            </p>
+            <p>
+              Orderplock och autostore packning
+            </p>
+          </li>
+          <li>
+            <h3>
+              Webbutvecklare
+            </h3>
+            <p class="duration">
+              <time datetime="2021">
+                2021
+              </time>
+              -
+              <time datetime="2022">
+                2022
+              </time>
+            </p>
+            <p class="employer">
+              Bejwing Rekrytering &amp; Gårdstjänst
+            </p>
+            <p>
+              Skapade hemsida via wordpress och implementerade egen kod för vissa delar
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="utbildning">
+        <h2>
+          Utbildning
+        </h2>
+        <ul>
+          <li>
+            <h3>
+              Webbutvecklare .NET
+            </h3>
+            <p class="duration">
+              <time datetime="2026">
+                2026
+              </time>
+              - pågående
+            </p>
+            <p>
+              Utveckling av moderna, säkra webbsystem och applikationer med C#, .NET, ASP.NET och MVC.
+              <br>
+              Design och implementering av användarvänliga gränssnitt med HTML5, CSS3 och moderna JavaScript-ramverk.
+            </p>
+          </li>
+          <li>
+            <h3>
+              Estet - Media
+            </h3>
+            <p class="duration">
+              <time datetime="2022">
+                2022
+              </time>
+              -
+              <time datetime="2025">
+                2025
+              </time>
+            </p>
+            <p>
+              Gymnasial utbildning på LBS Jönköping. Fokus på digitalt skapande, visuell kommunikation, och användarvänliga gränssnitt.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio-side">
+          <h2>
+            Portfolio
+          </h2>
+          <ol class="project-select">
+            <li>
+              <button type="button" data-slide="0" >
+                <i class="bi bi-1-circle-fill project-num">
+                </i>
+              </button>
+              <span class="project-label">
+                Mitt CV
+              </span>
+            </li>
+            <li>
+              <button type="button" data-slide="1" >
+                <i class="bi bi-2-circle project-num">
+                </i>
+              </button>
+              <span class="project-label">
+                Fiverr
+              </span>
+            </li>
+            <li>
+              <button type="button" data-slide="2" >
+                <i class="bi bi-3-circle project-num">
+                </i>
+              </button>
+              <span class="project-label">
+                Mobile-first
+              </span>
+            </li>
+            <li>
+              <button type="button" data-slide="3">
+                <i class="bi bi-4-circle project-num">
+                </i>
+              </button>
+              <span class="project-label">
+                Responsivitet-övning
+              </span>
+            </li>
+          </ol>
+        </div>
+        <ul id="portfolio-display" class="portfolio-display">
+          <li>
+            <article>
+              <h3>
+                Mitt CV
+              </h3>
+              <p>
+                Denna sida som du ser just nu. Skapad med HTML, CSS och JavaScript.
+              </p>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github">
+                </i>
+                Visa repo
+              </a>
+            </article>
+          </li>
+          <li hidden>
+            <article>
+              <h3>
+                Fiverr
+              </h3>
+              <p>
+                Min fiverr profil, där jag brukade skapa nodejs chatbottar åt kunder.
+              </p>
+              <a href="https://www.fiverr.com/trywin#Reviews" target="_blank" rel="noopener noreferrer" >
+                <i class="bi bi-link">
+                </i>
+                Visa sida
+              </a >
+            </article>
+          </li>
+          <li hidden>
+            <article>
+              <h3>
+                Mobile-first
+              </h3>
+              <p>
+                En övning för att lära mig mer om mobile-first utveckling och responsivitet.
+              </p>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" >
+                <i class="bi bi-github">
+                </i>
+                Visa repo
+              </a >
+            </article>
+          </li>
+          <li hidden>
+            <article>
+              <h3>
+                responsivitet-övning
+              </h3>
+              <p>
+                Ännu en övning för att lära mig mer om responsiva hemsidor
+              </p>
+              <a href="https://github.com/Yaarco/responsivitet-ovning" target="_blank" rel="noopener noreferrer" >
+                <i class="bi bi-github">
+                </i>
+                Visa repo
+              </a >
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Skapat av Marco Romin
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,431 @@
+body {
+    --light: #dad7cd;
+    --dark: #3a5a40;
+    --darkest: #344e41;
+    background-color: var(--light);
+    color: var(--darkest);
+    font-family: "Lilita One", sans-serif;
+    margin: 0;
+    padding-top: 2em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 5% 0;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: var(--light);
+}
+
+h2 {
+    font-size: 1.7em;
+    color: var(--light);
+    font-weight: 400;
+    background-color: var(--darkest);
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 0 0.5em;
+    padding-inline: 0.5em;
+    border-radius: 5px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0;
+    color: var(--darkest);
+}
+
+p.employer {
+    font-weight: bold;
+    font-family: "Lilita One", sans-serif;
+}
+
+section p, .kompetenser li {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0.1em 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.om-mig p {
+    padding: 0.5em;
+}
+
+.duration {
+    font-size: 1.5em;
+    font-family: "Lilita One", sans-serif;
+    color: rgba(43, 76, 43, 0.6);
+}
+
+main {
+    margin-top: 2em;
+    flex-grow: 1;
+    display: grid;
+    row-gap: 1em;
+    justify-content: center;
+    width: min(90vw, 900px);
+}
+
+header {
+    width: 100%;
+    padding: 0 1em;
+}
+
+section {
+    width: 90vw;
+    background-color: #193f0f1e;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+section.profil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-card img {
+    z-index: 0;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%;
+    -webkit-mask-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            rgba(0, 0, 0, 1),
+            to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0));
+}
+
+.profile-card {
+    position: relative;
+    text-align: center;
+    background-color: var(--dark);
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    margin: 0 1em;
+    width: 320px;
+    align-self: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: var(--light);
+    border-radius: 10px;
+    min-height: 250px;
+}
+
+article>a {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: #344e41;
+    width: fit-content;
+    padding: 0 0.5em;
+    border-radius: 10px;
+    color: var(--light);
+}
+
+article>a>i {
+    font-size: 1.5em;
+    padding-right: 0.2em;
+}
+
+article>h3 {
+    font-size: 1.8em;
+}
+
+article>p {
+    color: var(--dark);
+    padding: 0.3em 0;
+}
+
+
+.project-select button,
+.project-label {
+    font-size: 1.5em;
+    margin: 0.1em;
+    cursor: pointer;
+    color: var(--dark);
+    width: fit-content;
+}
+
+.project-label {
+    display: none;
+}
+
+.portfolio-side {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+.project-select li {
+    width: fit-content;
+    align-items: center;
+    display: inline;
+}
+
+.portfolio {
+    margin-bottom: 1em;
+}
+
+.portfolio-display {
+    width: 100%;
+}
+
+.portfolio h2 {
+    display: inline;
+}
+
+ul,
+ol {
+    padding: 0 1em;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+.kompetenser li {
+    font-family: "Rubik", sans-serif;
+    list-style-type: disc;
+    margin-left: 1em;
+}
+
+.erfarenhet li+li {
+    border-top: 3px solid var(--dark);
+    padding-top: 1.5em;
+}
+
+@keyframes ringer {
+    0% {
+        rotate: 10deg;
+    }
+
+    25% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 10deg;
+    }
+
+    75% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 10deg;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--darkest);
+    outline-offset: 3px;
+}
+
+.ringer {
+    animation-name: ringer;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    transition: rotate 0.1s;
+}
+
+
+
+address {
+    margin-top: 1em;
+    display: flex;
+    height: 5em;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+address>* {
+    transition: opacity 0.2s;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.activatedLink {
+    position: absolute;
+    background-color: inherit;
+    transition:
+        0.5s ease,
+        opacity 0.5s ease;
+    z-index: 1;
+}
+
+.contact-link {
+    position: absolute;
+    max-width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 1rem;
+    margin-left: 1.5em;
+    font-family: monospace;
+    background-color: var(--darkest);
+    color: var(--light);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.contact-link.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+address i {
+    color: var(--darkest);
+    font-size: 3.5em;
+}
+
+footer {
+    text-align: center;
+    width: 100vw;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 1.5em;
+}
+
+@media (min-width: 870px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "header erfarenhet"
+            "om-mig erfarenhet"
+            "om-mig utbildning"
+            "kompetenser utbildning"
+            "portfolio portfolio"
+            "footer footer";
+        column-gap: 1em;
+        row-gap: 1em;
+        --section-width: 400px;
+    }
+
+
+    header {
+        padding:0;
+        width: 400px;
+        grid-area: header;
+        justify-self: end;
+        align-self: end;
+    }
+
+    main {
+        display: contents;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    section {
+        width: var(--section-width);
+    }
+
+    .portfolio {
+        display: flex;
+    }
+
+    .portfolio h2 {
+        display: block;
+    }
+
+    .portfolio-side {
+        display: block;
+    }
+
+    .portfolio-side>ol {
+        display: block;
+    }
+
+    .portfolio-side li {
+        display: flex;
+        align-items: center;
+    }
+
+    .portfolio-side .project-label {
+        width: fit-content;
+        display: inline;
+    }
+
+    main .om-mig {
+        grid-area: om-mig;
+        justify-self: end;
+        align-self: start;
+        height: 100%;
+    }
+
+    main .erfarenhet {
+        grid-area: erfarenhet;
+        align-self: flex-end;
+        height: 100%;
+    }
+
+    main .kompetenser {
+        grid-area: kompetenser;
+        justify-self: end;
+        align-self: start;
+        height: 100%;
+    }
+
+    main .portfolio {
+        grid-area: portfolio;
+        justify-self: center;
+        width: calc(1em + var(--section-width)*2);
+    }
+
+    main .utbildning {
+        grid-area: utbildning;
+        align-self: stretch;
+        height: 100%;
+    }
+
+    footer {
+        grid-area: footer;
+        align-self: end;
+    }
+}

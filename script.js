@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     placeholder.style.height = `${selected.offsetHeight}px`;
     placeholder.style.visibility = "hidden";
     address.insertBefore(placeholder, selected);
-    selected.style.left = `${position.left - sectionPosition.left - placeholder.offsetWidth / 3}px`;
+    selected.style.left = `${position.left - sectionPosition.x-position.width/3}px`;
     selected.classList.add("activatedLink");
 
     contactTimers.push(

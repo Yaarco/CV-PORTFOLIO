@@ -51,7 +51,6 @@ h3 {
 }
 
 p.employer {
-    font-weight: bold;
     font-family: "Lilita One", sans-serif;
 }
 
@@ -67,7 +66,7 @@ section p, .kompetenser li {
 }
 
 .duration {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: "Lilita One", sans-serif;
     color: rgba(43, 76, 43, 0.6);
 }
